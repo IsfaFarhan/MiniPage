@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+* {
+    font-family:"Bakbak One", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #D9D9D9;
+    font-size: small;
+}
+
+.mainLayout01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
+}
+figure img{
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
+}
+.isfaBio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* try */
+.appsCollection{
+    display: none;
+}
+
+.appsCollectionActive{
+    display: block;
+}
+/* try */
