@@ -1,475 +1,495 @@
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
 
 * {
-    font-family:"Bakbak One", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Bakbak One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: #d9d9d9;
+  font-size: small;
+  background-color: #1e1e1e;
+}
+
+.backMainLayout {
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+
+.mainLayout01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+figure img {
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+.isfaBio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.isfa {
+  margin-bottom: 10px;
+}
+.bio {
+  font-weight: lighter;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.upperSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+
+.upperSection {
+  margin-bottom: 18px;
+}
+
+.web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.web:hover {
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5),
+    inset 0px -8px 8px hsla(0, 0%, 22%, 0.5);
+}
+
+.web:active {
+  color: #606060;
+  box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 6px;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.apps:hover {
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5),
+    inset 0px -8px 8px hsla(0, 0%, 22%, 0.5);
+}
+
+.apps:active {
+  color: #606060;
+  box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.bill img:active {
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 64%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 64%, 0.5);
+}
+
+.appsCollection {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+img {
+  border-radius: 5px;
+}
+.lowerSection {
+  margin-top: 18px;
+  margin-bottom: 16px;
+}
+
+.upperLower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.insta {
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.insta:hover {
+  background: linear-gradient(to bottom left, #ff8a00, #f72161, #5d14f8);
+  box-shadow: inset 2px 70px 40px 0px #1e1e1e, inset -2px 70px 40px 0px #1e1e1e,
+    2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.insta:active {
+  background: linear-gradient(to bottom left, #ff8a00, #f72161, #5d14f8);
+  box-shadow: inset 2px 2px 1px 1px hsla(0, 0%, 0%, 0.5),
+    inset 0px 0px 1px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.insta img {
+  margin-top: 2px;
+}
+
+.twitter {
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.twitter:hover {
+  background: linear-gradient(to bottom left, #1e1e1e, #134777, #0085ff);
+  box-shadow: inset 2px 70px 40px 0px #1e1e1e, inset -2px 70px 40px 0px #1e1e1e,
+    2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.twitter:active {
+  background: linear-gradient(to bottom left, #1e1e1e, #0b2844, #0085ff);
+  box-shadow: inset 2px 2px 1px 1px hsla(0, 0%, 0%, 0.5),
+    inset 0px 0px 1px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.twitter img {
+  margin-top: 2px;
+}
+
+.squareBoxUpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.lowerLower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.squareBoxLower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.squareBoxLower:hover {
+  background: linear-gradient(to bottom left, rgb(17, 75, 93), #0f1d42);
+  box-shadow: inset 2px 70px 40px 0px #1e1e1e, inset -2px 70px 40px 0px #1e1e1e,
+    2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.squareBoxLower:active {
+  color: #606060;
+  box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.tiktok {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.tiktok:hover {
+  background: linear-gradient(to bottom left, #ff3f3f, #ff3f3f, #00e0ff);
+  box-shadow: inset 2px 70px 40px 0px #1e1e1e, inset -2px 70px 40px 0px #1e1e1e,
+    2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.tiktok:active {
+  background: linear-gradient(to bottom left, #ff3f3f, #ff3f3f, #00e0ff);
+  box-shadow: inset 2px 2px 1px 1px hsla(0, 0%, 0%, 0.5),
+    inset 0px 0px 1px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.tiktok img {
+  margin-top: 6px;
+}
+
+.youtube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.youtube:hover {
+  background: linear-gradient(to bottom left, #1e1e1e, #7a1919, #ff1616);
+  box-shadow: inset 2px 70px 40px 0px #1e1e1e, inset -2px 70px 40px 0px #1e1e1e,
+    2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.youtube:active {
+  background: linear-gradient(to bottom left, #1e1e1e, #421414, #ff1616);
+  box-shadow: inset 2px 2px 1px 1px hsla(0, 0%, 0%, 0.5),
+    inset 0px 0px 1px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.youtube img {
+  margin-top: 4px;
+}
+
+.lowerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ngl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 16px;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.ngl:hover {
+  box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5),
+    inset 0px -8px 8px hsla(0, 0%, 22%, 0.5);
+}
+
+.ngl:active {
+  color: #606060;
+  box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+    -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+}
+
+.appsCollection {
+  display: none;
+}
+
+.appsCollectionActive {
+  display: block;
+}
+
+.appsCollectionHori {
+  display: none;
+}
+
+footer p {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    color: #D9D9D9;
+    color: #d9d9d9;
     font-size: small;
-    background-color: #1E1E1E;
-}
+    background-color: #1e1e1e;
+  }
 
-.backMainLayout{
-    margin: 0px 10px;
-    padding: 0px 10px;
-}
-
-.mainLayout01{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px ;
-    padding-bottom: 10px;
+  .mainLayout02 {
+    padding: 0px 26px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    width: 320px;
+    margin-bottom: 26px;
+    width: 720px;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-figure img{
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-.isfaBio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.isfa{
-    margin-bottom: 10px;
-}
-.bio{
-    font-weight: lighter;
-    font-size: 12px;
-    margin-top: 2px;
-}
-
-.upperSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none ;
-}
-a{
-    text-decoration: none;
-    color:#D9D9D9
-}
-
-.upperSection{
-    margin-bottom: 18px;
-}
-
-.web{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none ;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.web:hover{
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5), inset 0px -8px 8px hsla(0, 0%, 22%, 0.5) ;
-}
-
-.web:active{
-    color: #606060;
-    box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.apps{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none ;
-    cursor: pointer;
-    margin-top: 6px;
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.apps:hover{
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5), inset 0px -8px 8px hsla(0, 0%, 22%, 0.5);
-}
-
-.apps:active{
-    color: #606060;
-    box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.bill img:active{
-    border-radius: 20px;
-    box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 64%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 64%, 0.5) ;
-}
-
-.appsCollection{
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-img{
-    border-radius: 5px;
-}
-.lowerSection{
-    margin-top: 18px;
-    margin-bottom: 16px;
-}
-
-.upperLower{
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+      -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+  }
+  .mainLayout01 {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    margin-bottom: 8px;
-}
-
-.insta{
-
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-    margin-left: 9px;
-    margin-right: 9px;
-   
-}
-
-.insta:hover{
-    background: linear-gradient(to bottom left, #ff8a00, #F72161, #5D14F8 );
-    box-shadow: inset 2px 70px 40px 0px #1E1E1E, inset -2px 70px 40px 0px #1E1E1E, 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-
-
-}
-
-.insta:active{
-    background: linear-gradient(to bottom left, #ff8a00, #F72161, #5D14F8 );
-    box-shadow: inset 2px 2px 1px 1px hsla(0, 0%, 0%, 0.5), inset 0px 0px 1px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-
-.insta img{
-    margin-top: 2px;
-}
-
-
-.twitter{
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-    margin-left: 9px;
-    margin-right: 9px
-}
-
-.twitter:hover{
-    background: linear-gradient(to bottom left, #1E1E1E, #134777,  #0085FF );
-    box-shadow: inset 2px 70px 40px 0px #1E1E1E, inset -2px 70px 40px 0px #1E1E1E, 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-
-
-}
-
-.twitter:active{
-    background: linear-gradient(to bottom left, #1E1E1E, #0b2844, #0085FF);
-    box-shadow: inset 2px 2px 1px 1px hsla(0, 0%, 0%, 0.5), inset 0px 0px 1px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.twitter img{
-    margin-top: 2px;
-}
-
-.squareBoxUpper{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-    margin-left: 9px;
-    margin-right: 9px
-}
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0),
+      -2px -2px 4px 2px hsla(0, 0%, 23%, 0);
+  }
 
-.lowerLower{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    margin-top: 8px;
-    margin-bottom: 16px;
-}
-.squareBoxLower{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-    margin-left: 9px;
-    margin-right: 9px
-}
-
-.squareBoxLower:hover{
-    background: linear-gradient(to bottom left, rgb(17, 75, 93), #0f1d42 );
-    box-shadow: inset 2px 70px 40px 0px #1E1E1E, inset -2px 70px 40px 0px #1E1E1E, 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.squareBoxLower:active{
-    color: #606060;
-    box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-
-.tiktok{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-    margin-left: 9px;
-    margin-right: 9px
-}
-
-.tiktok:hover{
-    background: linear-gradient(to bottom left, #FF3F3F, #FF3F3F, #00E0FF );
-    box-shadow: inset 2px 70px 40px 0px #1E1E1E, inset -2px 70px 40px 0px #1E1E1E, 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.tiktok:active{
-    background: linear-gradient(to bottom left, #FF3F3F, #FF3F3F, #00E0FF);
-    box-shadow: inset 2px 2px 1px 1px hsla(0, 0%, 0%, 0.5), inset 0px 0px 1px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-
-.tiktok img{
-    margin-top: 6px;
-}
-
-.youtube{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-    margin-left: 9px;
-    margin-right: 9px
-}
-
-.youtube:hover{
-    background: linear-gradient(to bottom left, #1E1E1E, #7a1919, #FF1616 );
-    box-shadow: inset 2px 70px 40px 0px #1E1E1E, inset -2px 70px 40px 0px #1E1E1E, 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-
-
-}
-
-.youtube:active{
-    background: linear-gradient(to bottom left, #1E1E1E, #421414, #FF1616);
-    box-shadow: inset 2px 2px 1px 1px hsla(0, 0%, 0%, 0.5), inset 0px 0px 1px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.youtube img{
-    margin-top: 4px;
-}
-
-.lowerSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ngl{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none ;
-    cursor: pointer;
-    margin-top: 16px;
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.ngl:hover{
-    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5), inset 0px -8px 8px hsla(0, 0%, 22%, 0.5);
-}
-
-.ngl:active{
-    color: #606060;
-    box-shadow: inset 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-}
-
-.appsCollection{
-    display: none;
-}
-
-.appsCollectionActive{
+  .isfaBio {
     display: block;
-}
+    margin-bottom: 0px;
+  }
 
-.appsCollectionHori{
+  .right {
+    padding-left: 22px;
+  }
+
+  .left {
+    padding-top: 10px;
+  }
+
+  .web {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .apps {
+    margin-top: 20px;
+  }
+
+  .lowerSection {
+    margin-top: 0px;
+  }
+
+  .upperLower {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+
+  .insta {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+      -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .twitter {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+      -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .squareBoxUpper {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .lowerLower {
+    margin-top: 13px;
+    margin-bottom: 10px;
+  }
+
+  .tiktok {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+      -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .youtube {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+      -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .squareBoxLower {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .ngl {
+    margin-top: 14px;
+    margin-bottom: 10;
+    width: 329px;
+  }
+
+  .appsCollectionHori {
     display: none;
-}
+  }
 
-footer p{
+  .appsCollectionHoriActive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 10px;
-}
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5),
+      -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5);
+  }
 
-@media (min-width:768px) {
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        color: #D9D9D9;
-        font-size: small;
-        background-color: #1E1E1E;
-    }
-
-    .mainLayout02{
-        padding:0px 26px;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        margin-top: 10px;
-        margin-bottom: 26px;
-        width: 720px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-    }
-    .mainLayout01{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        padding-top: 0px ;
-        padding-bottom: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-radius: 0px;    
-        box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0), -2px -2px 4px 2px hsla(0, 0%, 23%, 0) ;        
-    }
-
-    .isfaBio{
-        display: block;
-        margin-bottom: 0px;
-    }
-
-    .right{
-        padding-left: 22px;
-    }
-
-    .left{
-        padding-top: 10px;
-    }
-
-    .web{
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-        
-    .apps{
-        margin-top: 20px;
-    }
-
-    .lowerSection{
-        margin-top:0px;
-    }
-
-    .upperLower{
-        margin-top: 13px;
-        margin-bottom: 13px;
-    }
-
-    .insta{
-
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-        margin-left: 16px;
-        margin-right: 16px;
-       
-    }
-    .twitter{
-
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-        margin-left: 16px;
-        margin-right: 16px;
-       
-    }
-
-    .squareBoxUpper{
-        margin-left: 16px;
-        margin-right: 16px
-    }
-
-    .lowerLower{
-        margin-top: 13px;
-        margin-bottom: 10px;
-    }
-
-    .tiktok{
-
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-        margin-left: 16px;
-        margin-right: 16px;
-       
-    }
-    .youtube{
-
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-        margin-left: 16px;
-        margin-right: 16px;
-       
-    }
-
-    .squareBoxLower{
-        margin-left: 16px;
-        margin-right: 16px
-    }
-
-    .ngl{
-        margin-top: 14px;
-        margin-bottom: 10;
-        width: 329px;
-    }
-
-
-    .appsCollectionHori{
-        display: none;
-
-    }
-
-    .appsCollectionHoriActive{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px 2px hsla(0, 0%, 0%, 0.5), -2px -2px 4px 2px hsla(0, 0%, 23%, 0.5) ;
-    }
-
-
-    footer p{
-        padding: 10px;
-    }
+  footer p {
+    padding: 10px;
+  }
 }
 /* try */
 
